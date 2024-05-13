@@ -1,0 +1,175 @@
+body {
+    background-color: #fee3d0;
+    margin: 0;
+    padding: 0;
+}
+
+.alerta-contraentrega {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+}
+.alerta-contraentrega-label{
+    font-size:larger;
+    margin-left: 40%;
+    font-family: 'Basic';
+}
+.icons-header {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.menu {
+    border: 1px solid #6a6767;
+    border-radius: 20px;
+    width: 98%;
+    margin:auto;
+    margin-top: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #6a67677d;
+}
+
+.container-titulo-menu {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-menu {
+    font-size: xx-large;
+    font-family: 'Basic';
+    color: #282224;
+}
+
+.rows-menu {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.rows-menu label {
+    margin: 0 25px;
+}
+
+.rows-menu a {
+    text-decoration: none;
+    color: #6a6767;
+}
+
+.container-banner-principal {
+    width: 100%;
+}
+
+.banner-principal {
+    width: 100%;
+}
+
+.titulo-productos {
+    background-color: #6a676781;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom:  40px;
+}
+
+.titulo-productos label {
+    font-size: xx-large;
+    color: white;
+    text-shadow: #6a6767;
+}
+
+.titulo-productos-seccion {
+    color: #282224;
+    font-size: x-large;
+    font-weight: 500;
+    margin: 0 0 10px 60px;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+
+.productos img {
+    width: 330px;
+    height: 330px;
+    border-radius: 30px;
+}
+
+.productos label {
+    display: block;
+}
+
+.producto {
+    color: #282224;
+    font-size: large;
+    font-weight: 500;
+}
+
+.price {
+    color: #6a6767;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.banner-secundario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.banner-secundario img {
+    width: 40%;
+    height: fit-content;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #6a6767;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.subir-menu {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+.subir-menu label {
+    text-decoration: none;
+    color: white;
+
+}
+
+.subir-menu a {
+    text-decoration: none;
+}
+
+.subir-menu img {
+    width: 30px;
+    margin-top: 10px;
+}
