@@ -11,7 +11,6 @@ body{
 
 .containerHeader {
     display: flex;
-    /* justify-content: center; */
     justify-content: space-around;
     width: 60%;
     padding: 15px;
@@ -27,10 +26,10 @@ body{
 }
 
 .profileImage {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    animation: spin 20s linear infinite;
+    animation: spin 30s linear infinite;
 }
 
 .containerPresentation {
@@ -43,16 +42,13 @@ body{
 .containerPresentation h1 {
     width: 100%;
     text-align: center;
-}
-
-.containerPresentation h1 {
     font-size: 3vw;
     font-weight: 600;
     text-shadow: 5px 5px 5px #2abf20;
 }
 
 .containerNickName {
-    font-size: xx-large;
+    font-size: 2vw;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -64,7 +60,7 @@ body{
 }
 
 .containerDescriptionProfile {
-    font-size: xx-large;
+    font-size: 2.25vw;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -75,7 +71,219 @@ body{
     text-align: justify;
 }
 
+.containerBanner {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.containerBanner img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 5px #63636c84;
+    margin-bottom: 25px;
+}
+
+.containerAboutMeTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.containerAboutMeTitle h2 {
+    font-size: 2vw;
+    text-shadow: 3px 3px 3px #2abf20;
+    font-weight: 600;
+}
+
+.containerAboutMe {
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+    width: 60%;
+    margin: 15px auto;
+ }
+   
+ #item-0 {
+    background-color: #10931034; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: justify;
+    align-content: center;
+    box-shadow: 1px 1px 1px 3px #aba6a629;
+ }
+ #item-1 {
+    background-color: #0d41b126; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 10px;
+    text-align: justify;
+    align-content: center;
+    box-shadow: 1px 1px 1px 3px #aba6a629;
+ }
+ #item-2 {
+    background-color: #0d41b126; 
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    align-content: center;
+    margin-left: 10px;
+    box-shadow: 1px 1px 1px 3px #aba6a629;
+ }
+
+.containerExperienceTitle {
+    display: flex;
+    justify-content: center;
+}
+
+ .containerExperienceTitle h2 {
+    font-size: 2vw;
+    text-shadow: 3px 3px 3px #2abf20;
+    font-weight: 600;
+ }
+
+.containerExperience {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 15px auto;
+}
+
+.experienceInfo {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #10931034;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 3px #aba6a629;
+}
+
+.experienceInfo ul {
+    list-style: none;
+}
+
+.containerFormationTitle {
+    display: flex;
+    justify-content: center;
+}
+
+ .containerFormationTitle h2 {
+    font-size: 2vw;
+    text-shadow: 3px 3px 3px #2abf20;
+    font-weight: 600;
+ }
+
+.containerFormation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 15px auto;
+    background-color: #0d41b126;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 3px #aba6a629;
+}
+
+.containerFormation1, 
+.containerFormation2 {
+    text-align: center;
+    margin: 15px auto;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
 @keyframes spin {
     from { transform: rotate(0deg);}
     to { transform: rotate(360deg);}
+}
+
+@media screen and (max-width: 490px) {
+
+    .containerHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        padding: 15px;
+    }
+    
+    .containerHeader a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 3.5vw;
+        font-weight: 600;
+        margin: 5px 0;
+    }
+    
+    .profileImage {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        animation: spin 20s linear infinite;
+        margin: 10px 0;
+    }
+    
+    .containerPresentation {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .containerPresentation h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 4.75vw;
+        font-weight: 600;
+        text-shadow: 5px 5px 5px #2abf20;
+    }
+    
+    .containerNickName {
+        font-size: 3.75vw;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .containerNickName p {
+        width: 60%;
+        text-align: center;
+    }
+    
+    .containerDescriptionProfile {
+        font-size: 4vw;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .containerDescriptionProfile p {
+        width: 80%;
+        text-align: justify;
+    }
 }
